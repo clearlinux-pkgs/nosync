@@ -4,13 +4,15 @@
 #
 Name     : nosync
 Version  : 1.0
-Release  : 2
+Release  : 3
 URL      : https://github.com/kjn/nosync/archive/1.0.tar.gz
 Source0  : https://github.com/kjn/nosync/archive/1.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: nosync-lib
+Patch1: cflags.patch
+Patch2: as-needed-fix.patch
 
 %description
 nosync
@@ -30,6 +32,8 @@ lib components for the nosync package.
 
 %prep
 %setup -q -n nosync-1.0
+%patch1 -p1
+%patch2 -p1
 
 %build
 make V=1  %{?_smp_mflags}
