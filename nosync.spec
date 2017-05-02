@@ -4,7 +4,7 @@
 #
 Name     : nosync
 Version  : 1.0
-Release  : 6
+Release  : 7
 URL      : https://github.com/kjn/nosync/archive/1.0.tar.gz
 Source0  : https://github.com/kjn/nosync/archive/1.0.tar.gz
 Summary  : No detailed summary available
